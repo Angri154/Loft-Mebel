@@ -1,0 +1,33 @@
+.conteiner {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #313131;
+  &__blocks,
+  &__blocks_left,
+  &__blocks_right {
+    justify-content: space-between;
+
+    display: flex;
+  }
+  &__blocks_left,
+  &__blocks_right {
+    min-width: 271px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav_icon {
+  margin-right: 10px;
+}
