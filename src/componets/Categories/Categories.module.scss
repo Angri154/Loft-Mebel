@@ -13,7 +13,16 @@
   padding-bottom: 23px;
   padding-top: 23px;
   display: flex;
+  white-space: nowrap;
   img {
     margin-right: 12px;
   }
+  transition: color 0.1s ease-in;
+  &:hover {
+    transition: color 0.1s ease-in;
+    color: #d74444;
+  }
+}
+.categories_block_red {
+  color: red;
 }

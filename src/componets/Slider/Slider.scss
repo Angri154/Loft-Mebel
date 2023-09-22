@@ -1,0 +1,28 @@
+.img-slider {
+  width: 1570px;
+  height: 600px;
+}
+.slider-container {
+  position: relative;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3); /* Фоновый цвет обертки кнопок */
+}
+
+.slider-buttons button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

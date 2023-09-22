@@ -35,7 +35,9 @@ const Categories = () => {
           <img src={childrensroom} alt="childrensroom-icon" />
           Детская
         </div>
-        <div className={style.categories_block}>Акция</div>
+        <div className={style.categories_block}>
+          <span className={style.categories_block_red}>Акция</span>
+        </div>
         <div className={style.categories_block}>
           <img src={etc} alt="" />
         </div>
