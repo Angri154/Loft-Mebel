@@ -1,28 +1,59 @@
-.img-slider {
-  width: 1570px;
-  height: 600px;
-}
-.slider-container {
+.custom-slider-container {
   position: relative;
+  text-align: center;
 }
 
-.slider-buttons {
+.custom-slider-controls {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.3); /* Фоновый цвет обертки кнопок */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.slider-buttons button {
-  background-color: transparent;
-  color: white;
+.custom-slider-controls button {
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  outline: none;
   padding: 10px 20px;
+  margin: 0 10px;
   cursor: pointer;
+  z-index: 9999;
+}
+
+.custom-slider-controls button:hover {
+  background-color: #0056b3;
+}
+.slider-block {
+  img {
+    width: 1570px;
+    height: 551px;
+  }
+}
+.slick-next {
+  right: 20px;
+  background-color: '#FFFFFF'; // Цвет фона
+  color: '#000000'; // Цвет текста
+  border: 'none'; // Убрать границу
+  outline: 'none'; // Убрать обводку
+  padding: '10px 20px'; // Отступы
+  cursor: 'pointer'; // Стиль курсора
+}
+.slick-prev {
+  left: 20px;
+  background-color: '#9D9D9D47'; // Цвет фона
+  color: 'white'; // Цвет текста
+  border: 'none'; // Убрать границу
+  outline: 'none'; // Убрать обводку
+  padding: '10px 20px'; // Отступы
+  cursor: 'pointer'; // Стиль курсора
+}
+.slick-prev,
+.slick-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 88888888;
+  width: 30px;
+  height: 30px;
 }
